@@ -1,0 +1,27 @@
+{
+  "name": "minav3",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Lector de chat de Discord con voz IA local y CUDA",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "deploy": "tsx src/deploy-commands.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "voice:test": "tsx scripts/test-voice.ts"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.2.3",
+    "opusscript": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

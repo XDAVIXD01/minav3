@@ -1,0 +1,13 @@
+.env
+node_modules/
+dist/
+logs/
+runtime/
+assets/voice/*
+!assets/voice/.gitkeep
+__pycache__/
+*.pyc
+control-center/release/
+control-center/build/
+control-center/*preview.png
+control-center/*test.json
